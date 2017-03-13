@@ -9,11 +9,16 @@ download/clone the repository and use any tool to make the the server and access
 And visit <http://localhost:[port]/>.
 
 ###Pages details
+```
 http://localhost:8080/#
+
 Shows the list of movies in horizontral scrollable view
 
 http://localhost:8080/#history
+
 Display the list of movies recently viewed. Using the cookies to store the viewed movies.
 
 http://localhost:8080/#moviename
+
 Will start the movie 
+```
