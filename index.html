@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Movies</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div id="app">
+        <div class="loading js-loading">
+            Loading please wait...</div>
+        <div class="js-Entries content"></div>
+        <div class="js-history content"></div>
+        <div class="player js-playerDiv">
+          <a class="js-close close">X</a>
+           <video height="100%" controls>
+                    Your browser does not support HTML5 video.
+                </video>
+        </div>
+    </div>
+    <script id="template" type="text/x-handlebars-template">
+       <div class="head">
+           <h1 class="active">Home</h1>
+           <a href="#history" class="link">History</a>
+       </div>
+        <div class="entries">
+            <ul>
+                {{#entries}}
+                <li class="entry">
+                    <a href=#{{id}}>
+                    {{#images}}
+                    <img src={{this.url}}/>
+                    {{/images}}
+                    <div class="entry_title">{{this.title}}</div>  
+                </a>
+                </li>
+                {{/entries}}
+            </ul>
+        </div>
+    </script>
+       <script id="history_template" type="text/x-handlebars-template">
+       <div class="head">
+           <h1 class="active">History</h1>
+           <a href="#" class="link">Home</a>
+       </div>
+       <h3>Recently watched by you:</h3>
+        <div class="entries">
+            <ul>
+                {{#entries}}
+                <li class="entry">
+                    <a href=#{{id}}>
+                    {{#images}}
+                    <img src={{this.url}}/>
+                    {{/images}}
+                    <div class="entry_title">{{this.title}}</div>  
+                </a>
+                </li>
+                {{/entries}}
+            </ul>
+        </div>
+    </script>
+
+    
+    <script src="js/external/handlebars.min.js"></script>
+    <script src="js/external/jquery-3.1.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    
+    
+    <script src="js/movies.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/model.js"></script>
+    <script src="js/view.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>

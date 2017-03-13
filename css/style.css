@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    font: 14px/18px verdana;
+}
+
+body,
+html {
+    background-color: lightgray;
+    margin: 0px;
+    padding: 0px;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0px;
+    list-style: none;
+}
+
+
+/* list */
+
+.content h3 {
+    font-size: 1.5em;
+    margin-left: 15px;
+}
+
+.entry {
+    width: 48%;
+    max-width: 214px;
+    min-height: 100px;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 15px;
+}
+
+.entry a {
+    text-decoration: none;
+    color: #4c4a4a;
+}
+
+.entry_title {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #5f5858;
+    text-align: left;
+}
+
+.entry img {
+    width: 100%;
+    border: 0;
+}
+
+
+/* loading*/
+
+.loading {
+    background-color: black;
+    color: white;
+    padding: 10%;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    left: 0px;
+    transform: translateY(-50%);
+}
+
+
+/* player */
+
+.player {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    background-color: black;
+    z-index: 9;
+    text-align: center;
+    display: none;
+}
+
+.player video {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.player a.close {
+    font-size: 2em;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    text-decoration: none;
+    z-index: 10;
+    border: 5px solid white;
+    border-radius: 24px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.player-inner {
+    display: inline-block;
+}
+
+
+/* head */
+
+.head {
+    background-color: #848080;
+    margin-bottom: 15px;
+    padding: 20px 40px;
+}
+
+.head a.link {
+    float: right;
+    color: white;
+}
+
+.head h1 {
+    font-size: 2em;
+    display: inline-block;
+    color: white;
+    margin: 0px;
+}
+
+
+/* tablet */
+
+@media only screen and (min-width: 600px) {}
+
+
+/* desktop */
+
+@media only screen and (min-width: 768px) {
+    /* loading */
+    .loading {
+        width: 50%
+    }
+    /* list */
+    .entries {
+        overflow-x: auto;
+        padding: 0px 15px;
+        text-align: center;
+    }
+    .entries ul {
+        white-space: nowrap;
+    }
+    .entries img {
+        width: 214px;
+        height: 317px;
+    }
+    .entry {
+        width: initial;
+        max-width: initial;
+        min-height: initial;
+    }
+}
