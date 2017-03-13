@@ -51,7 +51,9 @@ li {
     width: 100%;
     border: 0;
 }
-
+.entries{
+    text-align:center;
+}
 
 /* loading*/
 
@@ -136,12 +138,19 @@ li {
 
 /* tablet */
 
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 768px) {
+    .head{
+        margin-bottom:30px;
+    }
+    .entry{
+        margin-right:3%;
+    }
+}
 
 
 /* desktop */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
     /* loading */
     .loading {
         width: 50%
