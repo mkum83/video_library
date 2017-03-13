@@ -172,5 +172,6 @@ li {
         width: initial;
         max-width: initial;
         min-height: initial;
+        margin-right:0px;
     }
 }
