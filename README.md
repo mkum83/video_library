@@ -22,3 +22,7 @@ http://localhost:8080/#moviename
 
 Will start the movie 
 ```
+###Screenshots
+![Alt iPhone](/screenshots/iPhone%206.png?raw=true "iPhone")
+![Alt iPad](/screenshots/ipad.png?raw=true "iPad")
+![Alt Desktop](/screenshots/desktop.png?raw=true "Desktop")
